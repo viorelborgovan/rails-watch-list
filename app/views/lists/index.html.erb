@@ -1,0 +1,12 @@
+<h2>here we find all our lists</h1>
+
+<div id="lists">
+  <% @lists.each do |list|  %>
+    <%= list.name %>
+    <p>
+    <%= link_to "List Details", list %>
+    </p>
+    <% end %>
+</div>
+
+<%= link_to "Create a movie list", new_list_path %>
